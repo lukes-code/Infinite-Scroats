@@ -1,0 +1,67 @@
+body{
+  font-family: 'Montserrat', sans-serif;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+}
+
+.App-header {
+  background-color: #eee;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: #C44569;
+}
+
+.App-link {
+  color: #09d3ac;
+}
+
+nav {
+  position: fixed;
+  background: #C44569;
+  width: 100%;
+  color: #fff;
+  box-shadow: -1px -2px 20px black;
+}
+
+span.small-text {
+  display: block;
+  color: #596275;
+  font-size: 1rem;
+}
+
+button.btn-primary {
+  background: #778BEB;
+  border-radius: 25px;
+  border: none;
+  color: #fff;
+  padding: 15px;
+  cursor: pointer;
+  text-transform: uppercase;
+  margin: 35px;
+  transition: all 0.6s ease;
+  font-weight: bold;
+}
+
+button.btn-primary:hover {
+  background: #C44569;
+}
+
+button:focus {
+  outline: none;
+}
+
+.logo{
+    max-width: 300px;
+    padding: 5px;
+    margin-left: 20px;
+}
