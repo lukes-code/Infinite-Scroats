@@ -9,7 +9,7 @@ class Goat extends Component {
 
         return(
             <div className="GoatItem">
-                <img className="GoatImg" src={ "../src/images/goats/" + rand + ".jpg" }/>
+                <img className="GoatImg" src={ "/images/goats/" + rand + ".jpg" }/>
                <h1>issa goat</h1>
             </div>
         );

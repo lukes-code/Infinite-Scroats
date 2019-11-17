@@ -2,6 +2,7 @@ import React from 'react';
 import logo from './logo.svg';
 import Goat from './components/addGoat';
 import './App.css';
+import Toggle from './components/toggle';
 
 function App() {
   return (
@@ -14,9 +15,10 @@ function App() {
           </span>
         </p>
         <img src={logo} className="App-logo" alt="logo" />
-        <button className="btn-primary">Show me the goats</button>
-      </header>
-      <Goat />
+        </header>
+        <Toggle>
+          <Goat />
+        </Toggle>
     </div>
   );
 }
