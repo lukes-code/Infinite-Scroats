@@ -32,6 +32,7 @@ nav {
   width: 100%;
   color: #fff;
   box-shadow: -1px -2px 20px black;
+  z-index: 1;
 }
 
 span.small-text {
@@ -69,26 +70,40 @@ button:focus {
 }
 
 .GoatItem {
-  height: 400px;
-  background: #778beb;
+  height: 70vh;
+  background: #fff;
   width: 30%;
-  margin: 5em auto;
-  border-radius: 15px;
-  box-shadow: 6px 7px 20px -2px grey;
+  margin: 10vw auto;
+  border-radius:40px;
+  box-shadow: 3px 4px 20px -2px grey;
+  display: flex;
+  flex-direction: column;
+  contain: paint;
 }
 
 img.GoatImg {
-  width: 90%;
-  height: 70%;
+  overflow: hidden;
+  width: 100%;
   background: #eee;
-  margin: 20px 20px 0px 20px;
-  border-radius: 15px;
+  object-fit: cover;
+  flex: 4;
 }
 
 .GoatContent {
-  background: white;
-  margin: 0 auto;
-  width: 90%;
-  height: 15%;
-  border-radius: 15px;
+  background: #C44569;
+  margin: 0px;
+  width: 100%;
+  flex: 2;
+  color: white;
+  font-size: 1.7em;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+}
+
+
+
+@media (orientation: portrait){
+  .GoatItem{
+    width: 90%;
+  }
 }

@@ -26,7 +26,8 @@ class Goat extends Component {
         let randomName = arNames[Math.floor(Math.random()*arNames.length)];
 
         return(
-            <div className="GoatItem">
+            
+            <div className="GoatItem" onScroll={this.handleScroll}>
                 <img className="GoatImg" src={ "/images/goats/" + rand + ".jpg" }/>
                 <div className="GoatContent">
                     <p>Name: {randomName}</p>
