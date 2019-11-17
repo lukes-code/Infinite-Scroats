@@ -1,5 +1,6 @@
 import React from 'react';
 import logo from './logo.svg';
+import Goat from './components/addGoat';
 import './App.css';
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
         <button className="btn-primary">Show me the goats</button>
       </header>
+      <Goat />
     </div>
   );
 }

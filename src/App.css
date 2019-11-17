@@ -1,5 +1,6 @@
 body{
   font-family: 'Montserrat', sans-serif;
+  background: #eee;
 }
 
 .App {
@@ -64,4 +65,20 @@ button:focus {
     max-width: 300px;
     padding: 5px;
     margin-left: 20px;
+}
+
+.GoatItem {
+  height: 400px;
+  background: #778beb;
+  width: 30%;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+img.GoatImg {
+  width: 90%;
+  height: 70%;
+  background: #eee;
+  margin: 20px;
+  border-radius: 10px;
 }
