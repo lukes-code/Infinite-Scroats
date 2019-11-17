@@ -18,6 +18,10 @@ function App() {
         </header>
         <Toggle>
           <Goat />
+          <Goat />
+          <Goat />
+          <Goat />
+          <Goat />
         </Toggle>
     </div>
   );
