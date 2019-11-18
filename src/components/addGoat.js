@@ -22,7 +22,7 @@ class Goat extends Component {
             'Stepho',
           ];
 
-        var rand = Math.floor((Math.random() * 5) + 1);
+        var rand = Math.floor((Math.random() * 100) + 1);
         let randomName = arNames[Math.floor(Math.random()*arNames.length)];
 
         return(
