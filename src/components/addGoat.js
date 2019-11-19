@@ -1,10 +1,8 @@
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
 
 class Goat extends Component {
 
     render(){
-
         const arNames = [
             'Napoleon',
             'Albert',
@@ -19,7 +17,43 @@ class Goat extends Component {
             'Jacko',
             'Freddy',
             'Jezza',
-            'Stepho',
+            'Craig',
+            'Porkie',
+            'Stinky',
+            'Pete',
+            'Jeff',
+            'Taz',
+            'Taffy',
+            'Toffee',
+            'Buddy',
+            'Harrison',
+            'Spud',
+            'Phillipo',
+            'Godfrey',
+            'Mikey',
+            'Bobby',
+            'Micah',
+            'Frodo',
+            'Simon',
+            'Dylan',
+            'Shaun',
+            'Sean',
+            'Joey',
+            'Gruff',
+            'Tee',
+            'Jamie',
+            'Wayne',
+            'Paul',
+            'Goldey',
+            'Lucius',
+            'Lucifer',
+            'Donny',
+            'Clark',
+            'Kent',
+            'Leonard',
+            'Blue',
+            'Alex',
+            'Steffan',
           ];
 
         var rand = Math.floor((Math.random() * 100) + 1);
@@ -28,7 +62,7 @@ class Goat extends Component {
         return(
             
             <div className="GoatItem" onScroll={this.handleScroll}>
-                <img className="GoatImg" src={ "/images/goats/" + rand + ".jpg" }/>
+                <img className="GoatImg" src={ "/images/goats/" + rand + ".jpg" } alt="goat"/>
                 <div className="GoatContent">
                     <p>Name: {randomName}</p>
                 </div>

@@ -4,11 +4,12 @@ import Goat from './components/addGoat';
 import './App.css';
 import Toggle from './components/toggle';
 import InfiniteScroll from 'react-infinite-scroll-component';
+import uuid from 'uuid';
 
 class App extends React.Component {
 
   state = {
-    items: Array.from({ length: 5 })
+    items: Array.from({ length: 5 }),
   };
 
   fetchMoreData = () => {
@@ -18,6 +19,8 @@ class App extends React.Component {
   };
   
   render(){
+
+
     return (
       <div className="App">
         <header className="App-header">
@@ -37,7 +40,7 @@ class App extends React.Component {
             loader={<h4>Loading...</h4>}
           >
             {this.state.items.map((i, index) => (
-            <Goat />
+            <Goat key={uuid.v4()}/>
           ))}
           </InfiniteScroll>
             {/* <Goat />
