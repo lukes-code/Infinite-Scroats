@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
 
 class Goat extends Component {
 
@@ -19,7 +18,43 @@ class Goat extends Component {
             'Jacko',
             'Freddy',
             'Jezza',
-            'Stepho',
+            'Craig',
+            'Porkie',
+            'Stinky',
+            'Pete',
+            'Jeff',
+            'Taz',
+            'Taffy',
+            'Toffee',
+            'Buddy',
+            'Harrison',
+            'Spud',
+            'Phillipo',
+            'Godfrey',
+            'Mikey',
+            'Bobby',
+            'Micah',
+            'Frodo',
+            'Simon',
+            'Dylan',
+            'Shaun',
+            'Sean',
+            'Joey',
+            'Gruff',
+            'Tee',
+            'Jamie',
+            'Wayne',
+            'Paul',
+            'Goldey',
+            'Lucius',
+            'Lucifer',
+            'Donny',
+            'Clark',
+            'Kent',
+            'Leonard',
+            'Blue',
+            'Alex',
+            'Steffan',
           ];
 
         var rand = Math.floor((Math.random() * 100) + 1);
