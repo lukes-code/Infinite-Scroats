@@ -40,14 +40,9 @@ class App extends React.Component {
             loader={<h4>Loading...</h4>}
           >
             {this.state.items.map((i, index) => (
-            <Goat key={uuid.v4()}/>
+            <Goat />
           ))}
           </InfiniteScroll>
-            {/* <Goat />
-            <Goat />
-            <Goat />
-            <Goat />
-            <Goat /> */}
           </Toggle>
       </div>
     );

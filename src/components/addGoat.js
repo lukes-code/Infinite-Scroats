@@ -1,8 +1,14 @@
 import React, { Component } from 'react';
+import uuid from 'uuid';
 
 class Goat extends Component {
 
+    shouldComponentUpdate(nextProps){
+        return false;
+    }
+
     render(){
+
         const arNames = [
             'Napoleon',
             'Albert',
@@ -61,7 +67,10 @@ class Goat extends Component {
 
         return(
             
-            <div className="GoatItem" onScroll={this.handleScroll}>
+            <div 
+            className="GoatItem" 
+            onScroll={this.handleScroll}
+            >
                 <img className="GoatImg" src={ "/images/goats/" + rand + ".jpg" } alt="goat"/>
                 <div className="GoatContent">
                     <p>Name: {randomName}</p>
