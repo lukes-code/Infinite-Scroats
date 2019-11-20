@@ -7,6 +7,10 @@ state = {
 }
 
 toggle = () => {
+    setTimeout(() => {
+        var element = document.getElementById("Goats");
+        element.scrollIntoView({behavior: "smooth"});
+      }, 1);
     this.setState({
         on: !this.state.on
     })

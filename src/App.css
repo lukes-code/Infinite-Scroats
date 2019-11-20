@@ -100,10 +100,23 @@ img.GoatImg {
   font-weight: 500;
 }
 
-
+.GoatStory {
+  font-size: 0.7em;
+  padding: 0px 35px;
+ }
 
 @media (orientation: portrait){
   .GoatItem{
     width: 90%;
   }
+  .App-header{
+    min-height: 70vh;
+  }
+  button.btn-primary {
+    margin: 0px;
+  }
+  .GoatStory {
+    font-size: 0.6em;
+    padding: 0px 25px;
+   }
 }
