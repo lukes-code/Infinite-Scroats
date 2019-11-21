@@ -13,17 +13,25 @@ class Goat extends Component {
             'Stinky','Pete','Jeff','Taz','Taffy','Toffee','Buddy','Harrison','Spud','Phillipo','Godfrey','Mikey','Bobby','Micah','Frodo',
             'Simon','Dylan','Shaun','Sean','Joey','Gruff','Tee','Jamie','Wayne','Paul','Goldey','Lucius','Lucifer','Donny','Clark','Kent',
             'Leonard','Blue','Alex','Steffan',
-          ];
+            ];
 
-          const arLastNames = [
-            'Jones','Da Goat','Williams','the Third','Phillips','Lewis','Maxwell','Franklin','Peters','Peterson','Johnson','Big Boy',
-            'The Porker','Parker','Kent','Gruff','Mountain','Jeffers','Smith','Gregory','Good Boy','Brians','Walliams','Gretzka',
-            'James','Son of Satan','Bowen','Richards','Richardson','Baker','Rye','Kelly','Porker','Obama','Rodriguez','Bale',
-            'Haye','Trouble','Crasher','Smasher','Flash','Slug','Graham','Cates','Boy','Simo','Leonardo','Alexis','Peters','Gregg',
-          ];
+        const arLastNames = [
+        'Jones','Da Goat','Williams','the Third','Phillips','Lewis','Maxwell','Franklin','Peters','Peterson','Johnson','Big Boy',
+        'The Porker','Parker','Kent','Gruff','Mountain','Jeffers','Smith','Gregory','Good Boy','Brians','Walliams','Gretzka',
+        'James','Son of Satan','Bowen','Richards','Richardson','Baker','Rye','Kelly','Porker','Obama','Rodriguez','Bale',
+        'Haye','Trouble','Crasher','Smasher','Flash','Slug','Graham','Cates','Boy','Simo','Leonardo','Alexis','Peters','Gregg',
+        ];
+
+        let arUsedNames = [];
 
         var rand = Math.floor((Math.random() * 100) + 1);
-        let randomName = arFirstNames[Math.floor(Math.random()*arFirstNames.length)] + ' ' + arLastNames[Math.floor(Math.random()*arLastNames.length)];
+        let firstName = arFirstNames[Math.floor(Math.random()*arFirstNames.length)];
+        let lastName = arLastNames[Math.floor(Math.random()*arLastNames.length)];
+
+        //Add check here to see if firstName and/or last name has existing in the previous iterations
+        //array.includes array.shift array.push
+
+        let randomName = firstName + ' ' + lastName;
 
         return(
             
