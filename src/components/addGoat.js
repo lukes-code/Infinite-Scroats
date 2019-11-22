@@ -22,11 +22,30 @@ class Goat extends Component {
         'Haye','Trouble','Crasher','Smasher','Flash','Slug','Graham','Cates','Boy','Simo','Leonardo','Alexis','Peters','Gregg',
         ];
 
+        const arStoryStart = [
+            // Temporary information, replace with actual content
+            'Lorem ipsum dolor sit amet, consectetur adipiscing elit.','sed do eiusmod tempor incididunt ut labore.',
+            'et dolore magna aliqua. Etiam sit amet nisl purus in','Turpis egestas sed tempus urna et pharetra.',
+        ];
+
+        const arStoryMid = [
+            // Temporary information, replace with actual content
+            'Lorem ipsum dolor sit amet, consectetur adipiscing elit.','sed do eiusmod tempor incididunt ut labore.',
+            'et dolore magna aliqua. Etiam sit amet nisl purus in','Turpis egestas sed tempus urna et pharetra.',
+        ];
+
+        const arStoryEnd = [
+            // Temporary information, replace with actual content
+            'Lorem ipsum dolor sit amet, consectetur adipiscing elit.','sed do eiusmod tempor incididunt ut labore.',
+            'et dolore magna aliqua. Etiam sit amet nisl purus in','Turpis egestas sed tempus urna et pharetra.',
+        ];
+
         let arUsedNames = [];
 
         var rand = Math.floor((Math.random() * 100) + 1);
         let firstName = arFirstNames[Math.floor(Math.random()*arFirstNames.length)];
         let lastName = arLastNames[Math.floor(Math.random()*arLastNames.length)];
+        let randomStory = arStoryStart[Math.floor(Math.random()*arStoryStart.length)] + ' ' + arStoryMid[Math.floor(Math.random()*arStoryMid.length)] + ' ' + arStoryEnd[Math.floor(Math.random()*arStoryEnd.length)];
 
         //Add check here to see if firstName and/or last name has existing in the previous iterations
         //array.includes array.shift array.push
@@ -44,7 +63,7 @@ class Goat extends Component {
                 <div className="GoatContent">
                     <p>Name: {randomName}</p>
                     <div className="GoatStory">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Etiam sit amet nisl purus in. Turpis egestas sed tempus urna et pharetra. </p>
+                        <p>{randomStory}</p>
                     </div>
                 </div>
             </div>
