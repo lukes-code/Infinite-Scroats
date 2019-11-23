@@ -2,6 +2,10 @@ import React, { Component } from 'react';
 
 class Goat extends Component {
 
+    state = {
+        usedFirstNames: [],
+      };
+
     shouldComponentUpdate(nextProps){
         return false;
     }
@@ -40,10 +44,16 @@ class Goat extends Component {
             'et dolore magna aliqua. Etiam sit amet nisl purus in','Turpis egestas sed tempus urna et pharetra.',
         ];
 
-        let arUsedNames = [];
-
         var rand = Math.floor((Math.random() * 100) + 1);
-        let firstName = arFirstNames[Math.floor(Math.random()*arFirstNames.length)];
+        var newFirstName = this.state.usedFirstNames.slice();
+        let firstName = [];
+
+        do{
+            firstName = arFirstNames[Math.floor(Math.random()*arFirstNames.length)];
+            this.setState({ usedFirstNames: [...this.state.usedFirstNames, firstName] })
+        } while(this.state.usedFirstNames.includes(newFirstName));
+        // Fix this buy passing props to app js rather than setting state in this component
+
         let lastName = arLastNames[Math.floor(Math.random()*arLastNames.length)];
         let randomStory = arStoryStart[Math.floor(Math.random()*arStoryStart.length)] + ' ' + arStoryMid[Math.floor(Math.random()*arStoryMid.length)] + ' ' + arStoryEnd[Math.floor(Math.random()*arStoryEnd.length)];
 
