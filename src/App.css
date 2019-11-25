@@ -4,7 +4,8 @@ body{
 }
 
 .App {
-  text-align: center; 
+  text-align: center;
+  height: 100vh; 
 }
 
 .App-logo {
@@ -12,7 +13,6 @@ body{
 }
 
 .App-header {
-  background-color: #eee;
   min-height: 80vh;
   display: flex;
   flex-direction: column;
@@ -71,11 +71,10 @@ button:focus {
 
 .GoatItem {
   height: 70vh;
-  background: #fff;
   width: 30%;
   margin: 10vw auto;
   border-radius:40px;
-  box-shadow: 3px 4px 20px -2px grey;
+  box-shadow: 3px 4px 20px -2px #000;
   display: flex;
   flex-direction: column;
   contain: paint;
@@ -119,4 +118,62 @@ img.GoatImg {
     font-size: 0.6em;
     padding: 0px 25px;
    }
+}
+
+input[type=checkbox]{
+	height: 0;
+	width: 0;
+	visibility: hidden;
+}
+
+label {
+	cursor: pointer;
+	text-indent: -2222px;
+	width: 50px;
+	height: 26px;
+	background: #464646;
+	display: block;
+	border-radius: 25px;
+  position: fixed;
+  z-index: 10;
+  right: 10%;
+  top: 3%;
+}
+
+label:after {
+	content: '';
+	position: absolute;
+	top: 2px;
+	left: 2px;
+	width: 22px;
+	height: 22px;
+	background: #fff;
+	border-radius: 22px;
+	transition: 0.3s;
+}
+
+input:checked + label {
+	background: grey;
+}
+
+input:checked + label:after {
+	left: calc(100% - 2px);
+	transform: translateX(-100%);
+}
+
+label:active:after {
+	width: 30px;
+}
+
+@media (max-width: 500px){
+  label{
+    right: 5%;
+    top: 3.5%;
+  }
+}
+
+@media (max-width: 350px){
+  label{
+    display: none;
+  }
 }
