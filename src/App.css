@@ -52,7 +52,7 @@ button.btn-primary {
   margin: 35px;
   transition: all 0.6s ease;
   font-weight: bold;
-  box-shadow: 6px 7px 20px -2px grey;
+  box-shadow: 6px 7px 20px -2px #000;
 }
 
 button.btn-primary:hover {

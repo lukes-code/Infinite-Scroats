@@ -28,8 +28,8 @@ class Goat extends Component {
 
         const arStoryStart = [
             // Temporary information, replace with actual content
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit.','sed do eiusmod tempor incididunt ut labore.',
-            'et dolore magna aliqua. Etiam sit amet nisl purus in','Turpis egestas sed tempus urna et pharetra.',
+            'Born in hell, this goat is not to be reckoned with.','One of 16 siblings, this goat craves attention.',
+            'This French animal loves baguettes... and anything else edible actually.','Believe it or not, this young goat spawned in the land of Sweden.','Some say they have seen this goat kill, just saying.','As spanish as paella this goat does not understand English, or Spanish actually.','This goat claims to have come up with the idea for Uber.','This full time smoking goat has time for nobody.','Full time goat, part time comedian at the Comedy club on the farm.','This English goat loves sausage and mash.','Although convinced he is a sheep, this stud is infact a goat','Ever since this goat was a young boy he dreamed the stardom of Billy Goats Gruff.','Five time international head butt champion.','The origin of this goat is unknown, sadly he does not speak much English.','Sponsored by Subway, it is rumouored around the local farm that this goat is faster than Bolt!','This Scottish goat lived with his family of 5, before trading them in for a ham sandwich.','Born into the royal family, this goat believes he will one day be the King of England'
         ];
 
         const arStoryMid = [
