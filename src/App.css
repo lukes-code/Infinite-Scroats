@@ -83,7 +83,6 @@ button:focus {
 img.GoatImg {
   overflow: hidden;
   width: 100%;
-  background: #eee;
   object-fit: cover;
   flex: 4;
 }
