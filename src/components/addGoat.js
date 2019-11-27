@@ -20,14 +20,13 @@ class Goat extends Component {
             ];
 
         const arLastNames = [
-        'Jones','Da Goat','Williams','the Third','Phillips','Lewis','Maxwell','Franklin','Peters','Peterson','Johnson','Big Boy',
-        'The Porker','Parker','Kent','Gruff','Mountain','Jeffers','Smith','Gregory','Good Boy','Brians','Walliams','Gretzka',
-        'James','Son of Satan','Bowen','Richards','Richardson','Baker','Rye','Kelly','Porker','Obama','Rodriguez','Bale',
-        'Haye','Trouble','Crasher','Smasher','Flash','Slug','Graham','Cates','Boy','Simo','Leonardo','Alexis','Peters','Gregg',
+            'Jones','Da Goat','Williams','the Third','Phillips','Lewis','Maxwell','Franklin','Peters','Peterson','Johnson','Big Boy',
+            'The Porker','Parker','Kent','Gruff','Mountain','Jeffers','Smith','Gregory','Good Boy','Brians','Walliams','Gretzka',
+            'James','Son of Satan','Bowen','Richards','Richardson','Baker','Rye','Kelly','Porker','Obama','Rodriguez','Bale',
+            'Haye','Trouble','Crasher','Smasher','Flash','Slug','Graham','Cates','Boy','Simo','Leonardo','Alexis','Peters','Gregg',
         ];
 
         const arStoryStart = [
-            // Temporary information, replace with actual content
             'Born in hell, this goat is not to be reckoned with.','One of 16 siblings, this goat craves attention.',
             'This French animal loves baguettes... and anything else edible actually.',
             'Believe it or not, this young goat spawned in the land of Sweden.',
@@ -60,7 +59,6 @@ class Goat extends Component {
         ];
 
         const arStoryMid = [
-            // Temporary information, replace with actual content
             'Once tipped off as the next big thing in Winter Sports.',
             'The country people believe that this goat can backflip on command.',
             'Serial eater of buttered baguettes.',
@@ -73,11 +71,18 @@ class Goat extends Component {
             'No amount of love and attention will bring this goat back from the darkside.',
             'Banned from public view as children have reported him stealing their ball.',
             'Lover of all things grassy, pretty boring guy to be honest.',
-            'Future "Hall of Farmer" due to his notorious presence.'
+            'Future "Hall of Farmer" due to his notorious presence.',
+            'This geezer does not really do anything, just a typical goat.',
+            'He has been under surveillance since 2013, due to an internation cyber attack.',
+            'He has painted several pieces that have sold for millions, I doubt that he understands but his owners appreciate it.',
+            'After running for President in the goat world for the 11th time, he has been announced as local Mayor out of sympothy.',
+            'Full-time blogger, this fella just can not let the Tumblr days go.',
+            'Ever since we have known this goat, it is obvious he wants to one day be a sponsored Skateboarder.',
+            'Despite his good looks and popularity in the goat community, he strongly believes that he is infact an Alpaca.',
+            'He is not happy about us using this picture to represent him, he has told us his "Gains" are far better now.'
         ];
 
         const arStoryEnd = [
-            // Temporary information, replace with actual content
             'This boy has had several medicals and all doctors believe that he will live forever.',
             'Has been warned on numerous occasions that he must stop eating double cheese pizzas before his heart gives out.',
             'Since taking this photo, he has dyed his hair green. Do not ask us why.',
@@ -89,6 +94,8 @@ class Goat extends Component {
             'If you see this goat in an area near you please call us as his mother is worried sick.',
             'Has just asked us what a scrote is, this is awkward.',
             'Sadly, he is currently in intensive care as his most recent stunt did not go according to plan.',
+            'At his present time, he and his spouse have just delivered their 37th baby.',
+            'Unfortunately, this guy did not know he was allergic to avocado until it was too late (one hipster down).'
         ];
 
         var rand = Math.floor((Math.random() * 100) + 1);
@@ -118,7 +125,7 @@ class Goat extends Component {
             >
                 <img className="GoatImg" src={ "/images/goats/" + rand + ".jpg" } alt="goat"/>
                 <div className="GoatContent">
-                    <p>Name: {randomName}</p>
+                    <p>{randomName}</p>
                     <div className="GoatStory">
                         <p>{randomStory}</p>
                     </div>
