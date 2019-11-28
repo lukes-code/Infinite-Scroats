@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 export default class toggle extends Component {
 
 state = {
-    on: false,
+    toggle: false,
 }
 
 toggle = () => {
@@ -12,15 +12,15 @@ toggle = () => {
         element.scrollIntoView({behavior: "smooth"});
       }, 1);
     this.setState({
-        on: !this.state.on
+        toggle: !this.state.toggle
     })
 }
 
     render() {
         return (
             <React.Fragment>
-                {this.state.on && this.props.children}
-                {!this.state.on ? <button className="btn-primary" onClick={this.toggle}>Show me the goats</button> : null}
+                {this.state.toggle && this.props.children}
+                {!this.state.toggle ? <button className="btn-primary" onClick={this.toggle}>Show me the goats</button> : null}
             </React.Fragment>
         )
     }

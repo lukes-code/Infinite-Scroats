@@ -1,16 +1,16 @@
 import React from 'react';
-import logo from './logo.svg';
 import Goat from './components/addGoat';
 import './App.css';
 import Toggle from './components/toggle';
 import InfiniteScroll from 'react-infinite-scroll-component';
 import uuid from 'uuid';
+import Header from './components/Header';
 
 class App extends React.Component {
 
   state = {
     items: Array.from({ length: 5 }),
-    darkMode: false
+    darkMode: false,
   };
 
   fetchMoreData = () => {
@@ -44,22 +44,10 @@ class App extends React.Component {
       style={this.getStyle()}
       >
         <input type="checkbox" onClick={this.themeToggle} id="switch" /><label for="switch"></label>
-        <header 
-        className="App-header">
-          <p>
-            Infinite Scrolling Goats
-            <span 
-            className="small-text" 
-            style={this.getStyle()}
-            >
-              (Not Infinite Scrotes, sorry)
-            </span>
-          </p>
-          <img src={logo} className="App-logo" alt="logo" />
-          </header>
+         <Header />
           <Toggle>
           <InfiniteScroll
-            dataLength={this.state.items.length}
+            dataLength={this.state.items.length} 
             next={this.fetchMoreData}
             hasMore={true}
             loader={<h4>Loading...</h4>}
