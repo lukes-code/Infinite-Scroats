@@ -3,8 +3,9 @@ import Goat from './components/addGoat';
 import './App.css';
 import Toggle from './components/toggle';
 import InfiniteScroll from 'react-infinite-scroll-component';
-import uuid from 'uuid';
+// import uuid from 'uuid';
 import Header from './components/Header';
+import Theme from './components/Theme';
 
 class App extends React.Component {
 
@@ -30,6 +31,7 @@ class App extends React.Component {
   }
 
   themeToggle = () => {
+    console.log('changing style');
     this.setState({
       darkMode: !this.state.darkMode
     })
@@ -43,7 +45,9 @@ class App extends React.Component {
       className="App" 
       style={this.getStyle()}
       >
-        <input type="checkbox" onClick={this.themeToggle} id="switch" /><label for="switch"></label>
+        <Theme 
+          theme={this.themeToggle}
+        />
          <Header />
           <Toggle>
           <InfiniteScroll
