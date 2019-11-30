@@ -79,7 +79,8 @@ class Goat extends Component {
             'Full-time blogger, this fella just can not let the Tumblr days go.',
             'Ever since we have known this goat, it is obvious he wants to one day be a sponsored Skateboarder.',
             'Despite his good looks and popularity in the goat community, he strongly believes that he is infact an Alpaca.',
-            'He is not happy about us using this picture to represent him, he has told us his "Gains" are far better now.'
+            'He is not happy about us using this picture to represent him, he has told us his "Gains" are far better now.',
+            'Although he was not technically charged for anything in court back in 2015, he is banned from standing within 125ft of a School or any public service building.'
         ];
 
         const arStoryEnd = [
@@ -95,7 +96,16 @@ class Goat extends Component {
             'Has just asked us what a scrote is, this is awkward.',
             'Sadly, he is currently in intensive care as his most recent stunt did not go according to plan.',
             'At his present time, he and his spouse have just delivered their 37th baby.',
-            'Unfortunately, this guy did not know he was allergic to avocado until it was too late (one hipster down).'
+            'Unfortunately, this guy did not know he was allergic to avocado until it was too late (one hipster down).',
+            'Has gone on to be the face of the Goats after donating all his grass to charity.',
+            'Sadly this guy is back in rehab after getting hooked on eating manure again.',
+            'With a shift of attitute, this goat has now become a full-time React.js developer!',
+            'Now fighting for a living, he competes in the WWE spin off Goat.Wrestling.Entertainment.',
+            'Nobody has seen him for a while, although he does tend to get drunk and turn up a few weeks later.',
+            'Since 2017, 53 goats have wound up dead and he is believed to be the reason.',
+            'All I know is I would not want to fight this guy, look at him.',
+            'We have heard that he is now on the run after racking up "hella bills" in the strip club.',
+            'We doubt that you would recognise him these days, rocking a septum piercing and a studded belt.'
         ];
 
         var rand = Math.floor((Math.random() * 100) + 1);

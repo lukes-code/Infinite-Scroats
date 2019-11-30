@@ -3,7 +3,7 @@ import Goat from './components/addGoat';
 import './App.css';
 import Toggle from './components/toggle';
 import InfiniteScroll from 'react-infinite-scroll-component';
-// import uuid from 'uuid';
+import uuid from 'uuid';
 import Header from './components/Header';
 import Theme from './components/Theme';
 
@@ -58,7 +58,8 @@ class App extends React.Component {
             style={this.getStyle()}
           >
             {this.state.items.map((i, index) => (
-            <Goat/>
+            <Goat
+            />
           ))}
           </InfiniteScroll>
           </Toggle>
