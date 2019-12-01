@@ -15,15 +15,15 @@ class Goat extends Component {
         const arFirstNames = [
             'Napoleon','Albert','Phil','George','Graham','Bertie','Dexter','Frankie','Tommy','Kyle','Jacko','Freddy','Jezza','Craig','Porkie',
             'Stinky','Pete','Jeff','Taz','Taffy','Toffee','Buddy','Harrison','Spud','Phillipo','Godfrey','Mikey','Bobby','Micah','Frodo',
-            'Simon','Dylan','Shaun','Sean','Joey','Gruff','Tee','Jamie','Wayne','Paul','Goldey','Lucius','Lucifer','Donny','Clark','Kent',
-            'Leonard','Blue','Alex','Steffan',
+            'Simon','Dylan','Shaun','Sean','Joey','Gruff','Tee','Jamie','Peanut','Paul','Goldey','Lucius','Lucifer','Donny','Clark','Kent',
+            'Leonard','Blue','Alex','Steffan','Romeo','Kiwi','Bandit','Teddy','Jasper','Finn','Diesel','Simba','Murphy','Bruno','Barney','Dixen'
             ];
 
         const arLastNames = [
-            'Jones','Da Goat','Williams','the Third','Phillips','Lewis','Maxwell','Franklin','Peters','Peterson','Johnson','Big Boy',
-            'The Porker','Parker','Kent','Gruff','Mountain','Jeffers','Smith','Gregory','Good Boy','Brians','Walliams','Gretzka',
-            'James','Son of Satan','Bowen','Richards','Richardson','Baker','Rye','Kelly','Porker','Obama','Rodriguez','Bale',
-            'Haye','Trouble','Crasher','Smasher','Flash','Slug','Graham','Cates','Boy','Simo','Leonardo','Alexis','Peters','Gregg',
+            'Jones','Da Goat','Chubb','the Third','Phillips','Lewis','Piggo','Franklin','Red','Big Balls','Cookie','Big Boy',
+            'The Porker','Parker','Kent','Gruff','Mountain','Pinky','Smith','Gizmo','Good Boy','Crumpet','Walliams','Gretzka',
+            'James','Son of Satan','The Stud','McGregor','Shadow','Pepper','Rye','Kelly','Porker','Obama','Rodriguez','Bale',
+            'Haye','The Bakers Son','Crasher','Smasher','Flash','Slug','Graham','Cates','Boy','Simo','Leonardo','Ginger','Ginger','Gregg','Oreo'
         ];
 
         const arStoryStart = [
@@ -56,6 +56,7 @@ class Goat extends Component {
             'Born in flames, those closest to him claim that he has never blinked.',
             'A lover of jacket potatos, this animal originates from Bulgaria.',
             'This goat is originally from Scotland, before he wandered down to England.',
+            'Born with heart complications, he was adopted and imported from Japan at a very young age'
         ];
 
         const arStoryMid = [
@@ -75,12 +76,23 @@ class Goat extends Component {
             'This geezer does not really do anything, just a typical goat.',
             'He has been under surveillance since 2013, due to an internation cyber attack.',
             'He has painted several pieces that have sold for millions, I doubt that he understands but his owners appreciate it.',
-            'After running for President in the goat world for the 11th time, he has been announced as local Mayor out of sympothy.',
+            'After running for President in the goat world for the 11th time, he has been announced as local Mayor out of sympathy.',
             'Full-time blogger, this fella just can not let the Tumblr days go.',
             'Ever since we have known this goat, it is obvious he wants to one day be a sponsored Skateboarder.',
             'Despite his good looks and popularity in the goat community, he strongly believes that he is infact an Alpaca.',
             'He is not happy about us using this picture to represent him, he has told us his "Gains" are far better now.',
-            'Although he was not technically charged for anything in court back in 2015, he is banned from standing within 125ft of a School or any public service building.'
+            'Although he was not technically charged for anything in court back in 2015, he is banned from standing within 125ft of a School or any public service building.',
+            'Party go-er since birth, this goat can often be heard humming the sweet rave tunes of the 90s.',
+            'Although it is frowned upon for Goats to eat pastries, this goat has a sweet tooth for Greggs Sausage Rolls.',
+            'Vegan for many years now, this goat really does like grass.',
+            'He was training to be the first Goat Scuba Diver, but due to complications with equipment sizing he was unfortunately let go out of the program.',
+            'After auditioning for lead role in Mr.Robot all but 15 times, this passionate actor was given a sympathy role in a Bulgarian animal show.',
+            'Self-proclaimed hype beast, this goat took to selling second hand Jordans after he realised that they would not fit him.',
+            'Remember the goat screaming videos, well this goat started those.',
+            'Currently enrolled as an apprentice hairdresser, this goat sorts the locals out with his special "Trimz".',
+            'He can be heared roaring "Oh, Jeremy Corbyn" around the farm on a daily basis.',
+            'With over 100 followers on Instagoat, this diva has "Influencer" on his CV.',
+            'It is said that this spooky loving goat hibernated all year round, until Halloween'
         ];
 
         const arStoryEnd = [
@@ -105,7 +117,9 @@ class Goat extends Component {
             'Since 2017, 53 goats have wound up dead and he is believed to be the reason.',
             'All I know is I would not want to fight this guy, look at him.',
             'We have heard that he is now on the run after racking up "hella bills" in the strip club.',
-            'We doubt that you would recognise him these days, rocking a septum piercing and a studded belt.'
+            'We doubt that you would recognise him these days, rocking a septum piercing and a studded belt.',
+            'Sadly he passed away in a car crash this year, we are trying to seem sad but we are more impressed that he stole and car and was able to drive it',
+            'Despite his poor flexibility and four legs, he now dedicates all of his effort in to Goat-Jitsu'
         ];
 
         var rand = Math.floor((Math.random() * 100) + 1);
@@ -116,13 +130,9 @@ class Goat extends Component {
             firstName = arFirstNames[Math.floor(Math.random()*arFirstNames.length)];
             this.setState({ usedFirstNames: [...this.state.usedFirstNames, firstName] })
         } while(this.state.usedFirstNames.includes(newFirstName));
-        // Fix this buy passing props to app js rather than setting state in this component
-
+        
         let lastName = arLastNames[Math.floor(Math.random()*arLastNames.length)];
         let randomStory = arStoryStart[Math.floor(Math.random()*arStoryStart.length)] + ' ' + arStoryMid[Math.floor(Math.random()*arStoryMid.length)] + ' ' + arStoryEnd[Math.floor(Math.random()*arStoryEnd.length)];
-
-        //Add check here to see if firstName and/or last name has existing in the previous iterations
-        //array.includes array.shift array.push
 
         let randomName = firstName + ' ' + lastName;
 
