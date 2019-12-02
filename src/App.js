@@ -3,7 +3,6 @@ import Goat from './components/addGoat';
 import './App.css';
 import Toggle from './components/toggle';
 import InfiniteScroll from 'react-infinite-scroll-component';
-import uuid from 'uuid';
 import Header from './components/Header';
 import Theme from './components/Theme';
 
@@ -12,6 +11,7 @@ class App extends React.Component {
   state = {
     items: Array.from({ length: 5 }),
     darkMode: false,
+    usedNames: []
   };
 
   fetchMoreData = () => {
@@ -37,6 +37,11 @@ class App extends React.Component {
     })
     this.getStyle();
   }
+
+  newNames = (name) => {
+    console.log(this.props);
+    this.state.usedNames.push(name)
+  }
   
   render(){
 
@@ -48,7 +53,7 @@ class App extends React.Component {
         <Theme 
           theme={this.themeToggle}
         />
-         <Header />
+         <Header getStyle={this.getStyle()}/>
           <Toggle>
           <InfiniteScroll
             dataLength={this.state.items.length} 
@@ -59,6 +64,8 @@ class App extends React.Component {
           >
             {this.state.items.map((i, index) => (
             <Goat
+            newName={ this.state.usedNames.push(this.props.name) }
+              key={index}
             />
           ))}
           </InfiniteScroll>

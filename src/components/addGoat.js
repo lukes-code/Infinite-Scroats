@@ -131,10 +131,10 @@ class Goat extends Component {
             this.setState({ usedFirstNames: [...this.state.usedFirstNames, firstName] })
         } while(this.state.usedFirstNames.includes(newFirstName));
         
-        let lastName = arLastNames[Math.floor(Math.random()*arLastNames.length)];
-        let randomStory = arStoryStart[Math.floor(Math.random()*arStoryStart.length)] + ' ' + arStoryMid[Math.floor(Math.random()*arStoryMid.length)] + ' ' + arStoryEnd[Math.floor(Math.random()*arStoryEnd.length)];
+        const lastName = arLastNames[Math.floor(Math.random()*arLastNames.length)];
+        const randomStory = arStoryStart[Math.floor(Math.random()*arStoryStart.length)] + ' ' + arStoryMid[Math.floor(Math.random()*arStoryMid.length)] + ' ' + arStoryEnd[Math.floor(Math.random()*arStoryEnd.length)];
 
-        let randomName = firstName + ' ' + lastName;
+        const randomName = firstName + ' ' + lastName;
 
         return(
             
@@ -142,6 +142,7 @@ class Goat extends Component {
             className="GoatItem"
             id="Goats"
             onScroll={this.handleScroll}
+            name={() => this.props.newName("randomName")}
             >
                 <img className="GoatImg" src={ "/images/goats/" + rand + ".jpg" } alt="goat"/>
                 <div className="GoatContent">
