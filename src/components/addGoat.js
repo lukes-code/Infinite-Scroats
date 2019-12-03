@@ -56,7 +56,11 @@ class Goat extends Component {
             'Born in flames, those closest to him claim that he has never blinked.',
             'A lover of jacket potatos, this animal originates from Bulgaria.',
             'This goat is originally from Scotland, before he wandered down to England.',
-            'Born with heart complications, he was adopted and imported from Japan at a very young age'
+            'Born with heart complications, he was adopted and imported from Japan at a very young age',
+            'Found in an abandoned farm house, he has always had a strange look in his eyes.',
+            'Born with 3 brothers and 5 sisters, he was neglected until he found his way to this lovely farm.',
+            'He was born in Canada and sure is used to the winter chills!',
+            'Adopted in Northern Ireland, he has no memory of his family what so ever',
         ];
 
         const arStoryMid = [
@@ -92,7 +96,9 @@ class Goat extends Component {
             'Currently enrolled as an apprentice hairdresser, this goat sorts the locals out with his special "Trimz".',
             'He can be heared roaring "Oh, Jeremy Corbyn" around the farm on a daily basis.',
             'With over 100 followers on Instagoat, this diva has "Influencer" on his CV.',
-            'It is said that this spooky loving goat hibernated all year round, until Halloween'
+            'It is said that this spooky loving goat hibernated all year round, until Halloween',
+            'Born in Asia, he move from town to town, believed to be able to speak 7 goat languages to this very day.',
+            'His previous owners were not the kindest, they never used to share any of their cake... how rude!'
         ];
 
         const arStoryEnd = [
